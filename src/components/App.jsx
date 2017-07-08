@@ -14,13 +14,13 @@ class App extends React.Component {
 	componentWillUnmount() {
 	}
 
-
 	render() {
 		return (
 			<div className='ap-app'>
-                APP
+				APP
+				{this.props.children}
 			</div>
-		);
+		)
 	}
 }
 App.contextTypes = { router: React.PropTypes.object }

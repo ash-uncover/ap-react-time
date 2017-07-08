@@ -1,0 +1,52 @@
+.ap-clock-digital {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    color: #FA152A;
+    background: #353535;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    .ap-clock-hour {
+        display: inline-block;
+
+        &:after {
+            content: ':';
+        }
+    }
+    .ap-clock-minute {
+        display: inline-block;
+        &:after {
+            content: ':';
+        }
+    }
+    .ap-clock-second {
+        display: inline-block;
+    }
+}
+
+.ap-digital-char {
+    .ap-digital-char-top {
+
+    }
+    .ap-digital-char-top-left {
+
+    }
+    .ap-digital-char-top-right {
+
+    }
+    .ap-digital-char-mid {
+
+    }
+    .ap-digital-char-bottom-left {
+
+    }
+    .ap-digital-char-bottom-right {
+
+    }
+    .ap-digital-char-bottom {
+
+    }
+}

@@ -1,9 +1,11 @@
 import React from 'react'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
-import App  from 'components/App'
+import App from 'components/App'
+import Clocks from 'components/clocks/Clocks'
+import Redirect from 'components/Redirect'
 
-class AppRouter extends React.Component {
+class AppRoutes extends React.Component {
 
     constructor(props) {
         super(props)
@@ -21,6 +23,8 @@ class AppRouter extends React.Component {
         return (
             <Router history={browserHistory} onUpdate={this._onUpdate}>
                 <Route path='/' component={App} >
+                    <Route path='clocks' component={Clocks} >
+                    </Route>
                 </Route>
                 <Route path='*' component={Redirect} />
             </Router>
